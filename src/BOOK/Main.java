@@ -1,11 +1,8 @@
 package BOOK;
 
-import java.awt.*;
-import java.math.BigDecimal;
-
-public class MainforLibrary {
+public class Main {
     public static void main(String[] args) {
-        Book Book1 = new Book ("Незнайка", "Носов" );
+        Book Book1 = new Book("Незнайка", "Носов");
         Book Book2 = new Book("Буратино", "Толстой");
         Book Book3 = new Book("Волшебник Изумрудного городаа", "Волков");
         Book Book4 = new Book("Винни Пух", "Милн");
@@ -13,7 +10,7 @@ public class MainforLibrary {
         Book Book6 = new Book("Пеппи Длинныйчулок", "Лингренд");
         Book Book7 = new Book("Том Сойер", "Твен");
 
-        Library lybrary = new Library ();
+        Library lybrary = new Library();
         lybrary.addbook(Book1);
         lybrary.addbook(Book2);
         lybrary.addbook(Book3);
@@ -30,14 +27,10 @@ public class MainforLibrary {
 
         Takenbooks.addTakenBooks(lybrary.findBookByName("Незнайка"));
 
-         lybrary.deletebook(lybrary.findBookByName("Незнайка"));
-
+        lybrary.deleteBook(lybrary.findBookByName("Незнайка"));
 
 
         System.out.println(lybrary.getBookList());
         System.out.println(Takenbooks.getTakenBookList());
     }
-
-
-    }
-
+}
